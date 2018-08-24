@@ -4,14 +4,9 @@
 
   <meta charset="UTF-8">
   <title>Peluqueria Teto</title>
-  <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="estilos.css">
-
-  <script> 
-    function abrir(url) { 
-    open(url,'','top=350,left=350,width=500,height=300') ; 
-    } 
-  </script>
+  <link rel="stylesheet" type "text/css" href="css/normalize.css">
+  <link rel="stylesheet" type "text/css" href="css/estilos.css">
+  <script type "text/javascript" src="js/funciones.js"></script>
 
 </head>
 
@@ -21,7 +16,7 @@
 <header>
 
   <div id="recuadro_menu"></div>
-  <div style="position: absolute; left: 140px; top: 0px;"> <img src="teto.png"></div>
+  <div style="position: absolute; left: 140px; top: 0px;"> <img src="imagenes/teto.png"></div>
 
   <nav class="navigation">
     <div id="recuadro_opciones">
@@ -40,13 +35,13 @@
 <section class="contenido">
 
   <div id="recuadro_2" style="position: absolute; left: 0px; top: 80px;"></div>
-  <div style="position: absolute; left: 135px; top: 216px;"> <img src="logo teto.png"></div>
+  <div style="position: absolute; left: 135px; top: 216px;"> <img src="imagenes/logo teto.png"></div>
 
 
   <div id="Presentacion" style="position: absolute; left: 500px; top: 630px;">Bienvenido a Teto Pelo Joven 
   </div>  
 
-  <div style="position: absolute; left: 540px; top: 680px;"> <img src="separador.png"></div>
+  <div style="position: absolute; left: 540px; top: 680px;"> <img src="imagenes/separador.png"></div>
 
 
   <p style="position: absolute; left:208px; top:740px;">
@@ -58,35 +53,99 @@
 
 <a name="jobs"></a>
 
-  <div id="rectangulo_foto" style="position: absolute; left: 141px; top: 997px;">
+  <div id="rectangulo_foto" style="position: absolute; left: 141px; top: 997px;"><img src="imagenes/i1.jpg" style="width:270px; height:270px;">
   </div>
+
 
   <div id="rectangulo_foto" style="position: absolute; left: 141px; top: 1293px;">
+    <p id="texto_trabajos" style="font-size: 24px; font-weight: bold;">
+      Horario
+    </p>
+    <p id="texto_trabajos" style="font-size: 20px; position: absolute; top: 75px;">
+      Lunes - Viernes
+    </p>  
+    <p id="texto_trabajos" style="font-size: 18px; font-weight: bold; position: absolute; top: 102px;">
+      9:00h - 21:00h
+    </p>
+    <p id="texto_trabajos" style="font-size: 20px; position: absolute; top: 161px;">
+      Sábados
+    </p>
+    <p id="texto_trabajos" style="font-size: 18px; font-weight: bold; position: absolute; top: 188px;">  
+      9:00h - 14:00h
+    </p>
+  </div>
+  
+
+  <div id="rectangulo_foto" style="position: absolute; left: 141px; top: 1589px;"><img src="imagenes/i3.jpg" style="width:270px; height:270px;">
   </div>
 
-  <div id="rectangulo_foto" style="position: absolute; left: 141px; top: 1589px;">
-  </div>
 
   <div id="rectangulo_foto" style="position: absolute; left: 437px; top: 1589px;">
+    <p id="texto_trabajos" style="font-size: 28px; font-weight: bold; position: absolute; top: 34px;">
+      ¡Pide cita!
+    </p>
+    
+    <div style="position: absolute; left: 119px; top: 122px;"><img src="imagenes/telefono.jpg" style="width:32px; height:32px;"></div>
+
+    <p id="texto_trabajos" style="font-size: 38px; font-weight: bold; position: absolute; top: 132px;">
+      954 25 31 43
+    </p>
+
   </div>
+
 
   <div id="rectangulo_foto" style="position: absolute; left: 732px; top: 1589px;">
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423.1249420588885!2d-5.942515053389766!3d37.40137798201592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1268d2b8f6ea3b%3A0xd6c0e25e8267f573!2sTeto+Pelo+Joven!5e1!3m2!1ses!2ses!4v1535128012300" width="270" height="270" frameborder="0" style="border:0" allowfullscreen></iframe>
+
   </div>
+
 
   <div id="rectangulo_foto" style="position: absolute; left: 1030px; top: 1589px;">
+
+    <p id="texto_trabajos" style="font-size: 28px; font-weight: bold; position: absolute; top: 19px;">
+      Síguenos
+    </p>
+
+    <a title="Facebook" href="javascript:abrir_facebook('https://www.facebook.com/teto.pelojoven/')"><img src="imagenes/logo f.jpg" style="position: absolute; left: 77px; top: 107px; width:116px; height:116px;" alt="Facebook"></a>
+
   </div>
 
+
   <div id="rectangulo_slide" style="position: absolute; left: 437px; top: 997px;">
+
+    <div class="slideshow">
+
+      <div class="misfotos">
+        <div class="numero">1 / 3</div>
+        <img src="imagenes/img1.jpg" style="width:863px; height:566px;">
+      </div>
+
+      <div class="misfotos">
+        <div class="numero">2 / 3</div>
+        <img src="imagenes/img2.jpg" style="width:863px; height:566px;">
+      </div>
+
+      <div class="misfotos">
+        <div class="numero">3 / 3</div>
+        <img src="imagenes/img3.jpg" style="width:863px; height:566px;">
+      </div>
+
+      <script>showphoto()</script>
+      <a class="prev" onclick="photoplace(-1)">&#10094;</a>
+      <a class="next" onclick="photoplace(1)">&#10095;</a>
+    </div>
+
   </div>
 
 
 <a name="somos"></a> 
 
   <div id="Equipo" style="position: absolute; left: 605px; top: 1939px;">Nuestro equipo</div>
-  <div style="position: absolute; left: 540px; top: 1990px;"> <img src="separador.png"></div>
+  <div style="position: absolute; left: 540px; top: 1990px;"> <img src="imagenes/separador.png"></div>
 
   <div>
-    <img src="equipo1.png" class="redonda" style="position: absolute; left: 400px; top: 2090px;"/>
+    <img src="imagenes/equipo1.png" class="redonda" style="position: absolute; left: 400px; top: 2090px;"/>
     <p id="title" style="position: absolute; left:417px; top:2396px; width: 250px;">
     Nati
     </p>
@@ -96,7 +155,7 @@
   </div>
 
   <div>
-    <img src="equipo2.png" class="redonda" style="position: absolute; left: 756px; top: 2090px;"/>
+    <img src="imagenes/equipo2.png" class="redonda" style="position: absolute; left: 756px; top: 2090px;"/>
 
     <p id="title" style="position: absolute; left:773px; top:2396px; width: 250px;">
     David
@@ -108,9 +167,9 @@
 
 
   <div id="Precios" style="position: absolute; left: 663px; top: 2615px;">Precios</div>
-  <div style="position: absolute; left: 540px; top: 2665px;"> <img src="separador.png"></div>
+  <div style="position: absolute; left: 540px; top: 2665px;"> <img src="imagenes/separador.png"></div>
 
-  <div id="logo_precios" style="position: absolute; left: 140px; top: 2780px;"><img src="logo_precios.png"></div>
+  <div id="logo_precios" style="position: absolute; left: 140px; top: 2780px;"><img src="imagenes/logo_precios.png"></div>
   
 
   <p id="title" style="position: absolute; left:741px; top:2744px; width: 559px; height: 340px; text-align: left;">
