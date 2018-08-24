@@ -1,9 +1,9 @@
 @font-face {
   font-family: "Futura";
-  src: url(fonts/FuturaMedium.woff); }
+  src: url(../fonts/FuturaMedium.woff);}
 @font-face {
   font-family: "Lucida_Grande";
-  src: url(fonts/LucidaGrande.woff); }
+  src: url(../fonts/LucidaGrande.woff);}
 
 header {
 	position:fixed;left: 0px; top: 0px;
